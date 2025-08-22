@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML e CSS</title>
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tudo oq foi explicado na aula do marcio</h1>
+
+        <p>Tudo que o Marcio explicou na aula de Introdução ao Desenvolvimento Web que envolva códigos no HTML e CSS.</p>
+
+        <nav>
+            <ol>
+                <li>
+                    <a href="#Cascata">Regra da Cascata</a>
+                </li>
+                <li>
+                    <a href="#Especificidade">Regra da Cascata</a>
+                </li>
+                <li>
+                    <a href="#Combinação">Combinação de Seletores</a>
+                </li>
+            </ol>
+            
+        </nav>
+    </header>
+    
+    <main>
+        <section id="Cascata">
+            <h2>Regra da Cascata</h2>
+            <p>A regra da cascata propõe que: </p>
+            <ul>
+                <li>O código é lido de cima para baixo.</li>
+                <li>Sera aplicada sempre a ultima declaração lida, mesmo se haver várias do mesmo tipo.</li>
+            </ul>
+        </section>
+
+        <section id="Especificidade">
+            <h2>Regra da Especificidade</h2>
+            <p>A regra da especificidade propõe que: </p>
+            <ul>
+                <li>Itens de maior prioridade e são mais especificos aparecem mais.</li>
+                <li>A regra da especificidade é aplicada acima da cascata.</li>
+                <li>Se houver 2 seletores diferentes com o mesmo comando, mas definição diferente (p.e. color: red; e color: blue; respectivamente), um sendo uma classe, o outro sendo uma tag,mesmo se a tag aparecer por ultimo, ela não é aplicada, contrariando a regra da cascata.
+                    <ul>
+                        <li>
+                            Isso se da ao fato de uma classe ser mais especifica do que uma tag, tendo um valor de especificador de 10, enquanto a tag tem um valor de 1.
+                        </li>
+                        <li>
+                            Um ID tem um valor de 100, por isso ele substitui ambas a classe e a tag.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="Combinação">
+            <h2>Combinação de seletores</h2>
+            <p>Se pode combinar seletores para formar seleções mais específicas. </p>
+            <ul>
+                <li>Combinação com espaço:
+                    <ul>
+                        <li>
+                            .classe h1;
+                        </li>
+                        <li>
+                            A combinação com espaço
+                        </li>
+                    </ul>
+                </li>
+                <li>Combinação de filho:
+                    <ul>
+                        <li>
+                            .classe > h1;
+                        </li>
+                    </ul>
+                </li>
+                <li>Combinação de soma:
+                    <ul>
+                        <li>
+                            .classe h1 + h1;
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
