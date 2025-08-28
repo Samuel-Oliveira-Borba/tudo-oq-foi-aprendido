@@ -3,40 +3,88 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
 }
 
 body {
-    background-color: rgb(254, 255, 232);
+    background-color: rgb(55, 20, 135);
     align-items: center;
     align-content: center;
     text-align: center;
+
+    
     
 }
 
 header {
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 2rem;
+    background-color: rgb(223, 178, 255);
+    margin: 2rem 0 2rem 0;
     display: inline-block;
     border-radius: 1rem;
     width: 40rem;
+
+    border: 0.25rem solid rgb(56, 21, 53);
+    border-radius: 10px;
 }
 
 main {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(178, 179, 255);
     display: inline-block;
     border-radius: 1rem;
     width: 60rem;
     margin-bottom: 5rem;
+
+    border: 0.25rem solid rgb(24, 6, 36);
+    border-radius: 10px;
+}
+
+section {
+    background-color: rgb(155, 156, 255);
+
+    border: 0.5rem solid rgb(168, 169, 255);
+    border-inline: 2rem;
+    margin: 1rem 0 1rem 0;
 }
 
 h2 {
-    margin: 2rem 0 1rem 0;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2rem;
+
+    color: rgb(98, 31, 160);
+  
+    margin: 1rem 0 1.5rem 0;
 }
 
 li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.25rem;
+
+    font-size: 1.25rem;
+
+    color: rgb(59, 19, 98);
+}
+
+ul {
+    list-style: none;
+}
+
+ol {
+    list-style-position: inside;
 }
 
 p {
     margin-bottom: 0.75rem;
+
+    font-size: 1.25rem;
+
+    color: rgb(86, 28, 141);
+}
+
+body > p {
+    color: rgb(29, 9, 48);
 }
