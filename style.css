@@ -1,0 +1,42 @@
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(254, 255, 232);
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
+    display: inline-block;
+    border-radius: 1rem;
+    width: 40rem;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    border-radius: 1rem;
+    width: 60rem;
+    margin-bottom: 5rem;
+}
+
+h2 {
+    margin: 2rem 0 1rem 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 0.75rem;
+}

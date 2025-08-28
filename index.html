@@ -3,12 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>HTML e CSS</title>
-    <style>
-        * {
-            scroll-behavior: smooth;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -22,10 +18,22 @@
                     <a href="#Cascata">Regra da Cascata</a>
                 </li>
                 <li>
-                    <a href="#Especificidade">Regra da Cascata</a>
+                    <a href="#Especificidade">Regra da Especificidade</a>
                 </li>
                 <li>
                     <a href="#Combinação">Combinação de Seletores</a>
+                </li>
+                 <li>
+                    <a href="#Pseudo">Pseudo-classes</a>
+                </li>
+                <li>
+                    <a href="#Displays">Displays</a>
+                </li>
+                <li>
+                    <a href="#Propriedades">Propriedades e Shorthand</a>
+                </li>
+                <li>
+                    <a href="#Sizing">box-sizing: border-box</a>
                 </li>
             </ol>
             
@@ -71,7 +79,7 @@
                             Exemplo: .classe h1;
                         </li>
                         <li>
-                            A combinação com espaço escolhe somente as tags indicadas que contem a classe indicada.
+                            A combinação com espaço seleciona todas as tags indicadas dentro da classe estabelecida.
                         </li>
                     </ul>
                 </li>
@@ -83,6 +91,9 @@
                         <li>
                             A combinação de filho escolhe somente as tags indicadas que forem filhos (não netos) da classe indicada.
                         </li>
+                        <li>
+                            A combinação de filho escolhe somente as tags indicadas que sejam filhas dos elementos que contem a classe.
+                        </li>
                     </ul>
                 </li>
                 <li>Combinação de soma:
@@ -93,14 +104,204 @@
                         <li>
                             A combinação de soma escolhe somente as tags que vem depois da primeira aparição da tag indicada que contem a classe.
                         </li>
+                        <li>
+                            A combinação de soma escolhe todas as tags indicadads que vem depois da primeira aparição da primeira tag indicada e que esteja dentro da classe indicada.
+                        </li>
                     </ul>
                 </li>
             </ul>
         </section>
-        <section class="pseudo-classe">
-            <h2>Pseudo-Classes</h2>
-            <p>As pseudo-classes são utilizadas junto com a combinação de espaço dos seletores. </p>
 
+        <section id="Pseudo">
+            <h2>Pseudo-classes</h2>
+            <p>As pseudo-classes trabalham junto com a combinação de filho para selecionar tags com mais prioridades.</p>
+
+            <ul>
+                <li>
+                    first-child:
+                    <ul>
+                        <li>
+                            .classe h1:first-child
+                        </li>
+                        <li>
+                            A pseudo-classe first-child seleciona a primeira aparição da tag indicada dentro da classe.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    last-child:
+                    <ul>
+                        <li>
+                            .classe h1:last-child
+                        </li>
+                        <li>
+                            A pseudo-classe last-child seleciona a ultima aparição da tag indicada dentro da classe.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    nth-child:
+                    <ul>
+                        <li>
+                            .classe h1:nth-child(2)
+                        </li>
+                        <li>
+                            A pseudo-classe nth-child seleciona a aparição da tag indicada conforme o numero selecionado e dentro da classe.
+                        </li>
+                        <li>
+                            .classe h1:nth-child(2) selecionará a segunda aparição da tag h1 dentro da classe.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    nth-of-type:
+                    <ul>
+                        <li>
+                            .classe h1:nth-of-type(2)
+                        </li>
+                        <li>
+                            A pseudo-classe nth-of-type seleciona a aparição da tag indicada conforme o numero selecionado e dentro da classe, funciona igual a nth-child, só muda o nome.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="Displays">
+            <h2>Displays</h2>
+            <p>Os Displays mudam como as coisas se encaixam na pagina.</p>
+            <ul>
+                <li>
+                    Display Inline:
+                    <ul>
+                        <li>
+                            Pode-se editar: padding, margin e border.
+                        </li>
+                        <li>
+                            Ocupam somente o espaço que precisam e deixam espaço para elementos ficarem ao lado.
+                        </li>
+                        <li>
+                            As tags que ja tem o Display-Inline consigo são: a, em, strong, span, img, button, input.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Display Block:
+                    <ul>
+                        <li>
+                            Pode-se editar: width, height, padding, margin e border.
+                        </li>
+                        <li>
+                            Ocupam a tela inteira em relação à largura.
+                        </li>
+                        <li>
+                            As tags que ja tem o Display-Block consigo são: h1, p, div, section, main, headder, nav, ul e ol.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Display Inline-Block:
+                    <ul>
+                        <li>
+                            Pode-se editar: width, height, padding, margin e border.
+                        </li>
+                        <li>
+                            Ocupam somente o espaço que precisam e deixam espaço para elementos ficarem ao lado.
+                        </li>
+                        <li>
+                            É uma junção de Display-Inline e Display-Block, um exemplo são imagens.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="Propriedades">
+            <h2>Propriedades e Shorthand</h2>
+            <p>As propriedades em que serão faladas são Margin, Padding, Border e o Shorthand.</p>
+
+            <ul>
+                <li>
+                    Margin:
+                    <ul>
+                        <li>
+                            É o espaçamento entre um elemento e outro.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Padding:
+                    <ul>
+                        <li>
+                            É o espaçamento entre a borda e o conteúdo da tag.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Border:
+                    <ul>
+                        <li>
+                            É a borda da tag, entre Margin e Padding.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Sufixos:
+                    <ul>
+                        <li>
+                            É o jeito de selecionar um de todos os lados de uma tag. usando (propriedade + sufixo)
+                            <ul>
+                                Sufixos:
+                                <li>
+                                    bottom: Escolhe a parte de baixo
+                                </li>
+                                <li>
+                                    top: Escolhe a parte de cima
+                                </li>
+                                <li>
+                                    left: Escolhe a parte da esquerda
+                                </li>
+                                <li>
+                                    right: Escolhe a parte da direita
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Shorthand:
+                    <ul>
+                        <li>
+                            Pode-se colocar 4 valores nas propriedades de Margin, Padding e Border de uma só vez, sem precisar usar Margin-bottom ou Padding-top.
+                        </li>
+                        <li>
+                            Em Margin e Padding funciona como:
+                            <ul>
+                                <li>
+                                    Margin: Top Right Bottom Left;
+                                </li>
+                                <li>
+                                    Padding: Top Right Bottom Left;
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Em Border funciona como:
+                            <ul>
+                                <li>
+                                    Border: Size Type Color;
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="Sizing">
+            <h2>box-sizing: border-box</h2>
+            <p>O "box-sizing: border-box" força os lados a serem do mesmo tamanho que forem indicados.</p>
+            <p>Geralmente, ao indicar um "width = 400", o conteudo total ira ser de tamanho 400, sem contar a Margin e Padding. Com o border-box, o tamanho do conteudo é subtraido em relação à Margin e Padding para que o tamanho total ocupado seja 400.</p>
         </section>
     </main>
 </body>
